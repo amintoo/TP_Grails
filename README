@@ -1,0 +1,43 @@
+PROJET GRAILS
+-------------
+
+Développé par :      Amin Daher
+                     Gabriel Diaz
+                      
+ 
+1/ Partie USER : 
+--------------
+
+Les Users peuvent être créés, modifiés, affichés ou supprimés.
+
+Lorsque l'utilisateur souhaite modifier sa vignette, la précédente est automatiquement supprimée de la base de données
+Illustration ainsi que du dossier assets.
+
+
+2/ Partie ANNONCE :
+-----------------
+
+Les Annonces peuvent être créées, modifiées, affichées ou supprimées.
+
+Les illustrations peuvent être ajoutées et supprimées depuis le menu de modification de l'annonce.
+La suppression d'une image entraine également une suppression dans la base de données Illustration ainsi que dans le dossier assets.
+
+
+3/ Partie ILLUSTRATION :
+----------------------
+
+Le contrôleur et les vues de la base de données illustration ont été supprimés.
+
+L'ajout, la modification, la visualisation et la modification des illustrations sont imbriqués à la gestion des users et des annonces.
+
+
+4/ API REST :
+-----------
+
+
+
+
+
+
+
+
