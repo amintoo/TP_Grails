@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "c362739f-84ae-4f39-8439-e23a2743e7da",
+		"name": "API Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "annonce",
+			"item": [
+				{
+					"name": "GET annonce",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put annonce",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce?id=1&title=toto&dateCreated=03-10-201&validTill=20-02-2019&state=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "title",
+									"value": "toto"
+								},
+								{
+									"key": "dateCreated",
+									"value": "03-10-201"
+								},
+								{
+									"key": "validTill",
+									"value": "20-02-2019"
+								},
+								{
+									"key": "state",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put invalid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce?id=2&dateCreated=03-10-2019&validTill=20-02-2011&state=true&description=hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "dateCreated",
+									"value": "03-10-2019"
+								},
+								{
+									"key": "validTill",
+									"value": "20-02-2011"
+								},
+								{
+									"key": "state",
+									"value": "true"
+								},
+								{
+									"key": "description",
+									"value": "hello"
+								},
+								{
+									"key": "title",
+									"value": "hu",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete annonce",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invalid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce?id=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch annonce",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce/2?id=100&description=bla &dateCreated=03-10-20&validTill=20-02-2019&state=true&title=bonjour",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce",
+								"2"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100"
+								},
+								{
+									"key": "description",
+									"value": "bla "
+								},
+								{
+									"key": "dateCreated",
+									"value": "03-10-20"
+								},
+								{
+									"key": "validTill",
+									"value": "20-02-2019"
+								},
+								{
+									"key": "state",
+									"value": "true"
+								},
+								{
+									"key": "title",
+									"value": "bonjour"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch invalid",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonce/2?id=1&description=bla &dateCreated=bla&state=tru&titre=bon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonce",
+								"2"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "description",
+									"value": "bla "
+								},
+								{
+									"key": "dateCreated",
+									"value": "bla"
+								},
+								{
+									"key": "state",
+									"value": "tru"
+								},
+								{
+									"key": "titre",
+									"value": "bon"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "annonces",
+			"item": [
+				{
+					"name": "Post annonces",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonces/?validTill=03-02-201&description=bla bla&title=toto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonces",
+								""
+							],
+							"query": [
+								{
+									"key": "validTill",
+									"value": "03-02-201"
+								},
+								{
+									"key": "description",
+									"value": "bla bla"
+								},
+								{
+									"key": "state",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "toto"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post invalid",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonces/?validTill=03-02-201&description=bla bla&title=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonces",
+								""
+							],
+							"query": [
+								{
+									"key": "validTill",
+									"value": "03-02-201"
+								},
+								{
+									"key": "description",
+									"value": "bla bla"
+								},
+								{
+									"key": "state",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET annonces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annonces/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/annones/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"annones",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c703b1eb-8b75-4a8d-a33e-d69e6b593b3a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d3f697ac-3592-49e9-9088-00de789d1477",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
