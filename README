@@ -1,9 +1,10 @@
-PROJET GRAILS
+PROJET GRAILS                                             Master 2 MBDS      
 -------------
 
 Développé par :      Amin Daher
                      Gabriel Diaz
-                      
+                     
+                     
  
 1/ Partie USER : 
 --------------
@@ -31,9 +32,10 @@ Le contrôleur et les vues de la base de données illustration ont été supprim
 L'ajout, la modification, la visualisation et la modification des illustrations sont imbriqués à la gestion des users et des annonces.
 
 
+
 4/ API REST :
 -----------
-
+La collection de notre API se trouve dans le dossier Collection Postman dans le projet
 
 
 
